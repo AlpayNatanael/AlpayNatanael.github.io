@@ -108,6 +108,28 @@ body {
   margin-top: 20px;
 }
 
+.box {
+  width: 30%;
+  height: 200px;
+  border: 5px dashed #f7a239;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
@@ -128,7 +150,7 @@ body {
 <body>
 
 <div class="header">
-  <h1>Natanael S Alpay </h1>
+  <h1>Natanael S. Alpay </h1>
   <p>Personal Website (still in progress)</p>
 </div>
 
@@ -142,10 +164,19 @@ body {
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
+      <h2>Favorite Mathematical Spaces</h2>
+      <h3>The Hardy Spae</h3>
+      <div class="fakeimg"> $\mathbf H^2=...$</div>
+      <h3>The Fock Spae</h3>
+      <div class="fakeimg"> $\mathbf \mathcal F=...$</div>
+      <p>Some text...</p>
+      <p>Some more text...</p>
+    </div>
+    <div class="card">
       <h2>VR Projects</h2>
       <h5>Some project that involes virtual reality and Abstract Mathematics</h5>
       <!--<div src="p1.png" style="height:200px;">Image</div>-->
-      <img src="p1.png" alt="Paris" width="300" height="300">
+      <img src="./misc/p1.png" width="300" height="300">
 
       <!--<p>Some text..</p>-->
       <p>Using VR we can help students to visualize abstract mathematical sructures such as lattices.</p>
@@ -155,18 +186,11 @@ body {
       <a href="https://AlpayNatanael.github.io/VR-color-objects/"> VR colorful Objects</a>
       <a href="#" style="float:right">Link</a>
     </div>
-    <div class="card">
-      <h2>TITLE</h2>
-      <h5>Title description</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text...</p>
-      <p>Some more text...</p>
-    </div>
   </div>
   <div class="rightcolumn">
     <div class="card">
       <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
+      <img src="./misc/pic2.jpg">
       <p>Undergraduate Student at Chapman University. BS in Mathematics, Phyiscs and Computer Science. BA in French.</p>
     </div>
     <div class="card">
@@ -177,13 +201,13 @@ body {
     </div>
     <div class="card">
       <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <p>Dont.</p>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h1 style="font-size:3vw"><p class="italic" >"Dans l'imagination on peut voir".</p></h1>
 </div>
 
 </body>
