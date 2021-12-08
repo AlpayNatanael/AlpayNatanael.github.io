@@ -19,11 +19,16 @@
 -->
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <head>
 <style>
 * {
   box-sizing: border-box;
 }
+
+.mySlides {display:none;}
+
 
 body {
   font-family: Arial;
@@ -170,7 +175,7 @@ li:not(:last-child) {
   <div class="leftcolumn">
 
     <div class="card">
-      <h1> Research Publications in Progress</h1>
+      <h2> Research Publications in Progress</h2>
       <ol>
         <li><a href="./pages/Hardy.html"> A new characterization of the Hardy space and of other spaces of analytic functions (submitted)</a></li>
         <li> <a href="./pages/FockGen.html"> Generalized Fock space and fractional derivative and Applications for Uniqueness, Sampling, and Interpolations (preprint)</a></li>
@@ -228,7 +233,17 @@ The theory behind implementations </a></li>
   <div class="rightcolumn">
     <div class="card">
       <h2>About Me</h2>
-      <img src="./misc/p3.jpg">
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+      <!--<img src="./misc/p3.jpg">-->
       <p>Undergraduate Student at Chapman University. BS in Mathematics, Phyiscs and Computer Science. BA in French.</p>
     </div>
     <div class="topnav">
@@ -242,6 +257,27 @@ The theory behind implementations </a></li>
 <div class="footer">
   <h1 style="font-size:3vw"><p class="italic" >"Dans l'imagination on peut voir".</p></h1>
 </div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 </body>
 </html>
