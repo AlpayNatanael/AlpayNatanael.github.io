@@ -963,3 +963,48 @@
 2022-01-06 20:28:13.805 DEBUG 143224 --- [http-nio-9221-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
 2022-01-06 20:28:13.806 DEBUG 143224 --- [http-nio-9221-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomScannerServiceResult{findings=[CustomScannersServiceFinding{file='index.html', lineNumber='290 (truncated)...]
 2022-01-06 20:28:13.807 DEBUG 143224 --- [http-nio-9221-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-06 20:28:31.571 DEBUG 143224 --- [http-nio-9221-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/v1/scanFile", parameters={masked}
+2022-01-06 20:28:31.573 DEBUG 143224 --- [http-nio-9221-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#runScanFile(MultipartFile, String, int[])
+2022-01-06 20:28:31.722 DEBUG 143224 --- [http-nio-9221-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-06 20:28:31.723 DEBUG 143224 --- [http-nio-9221-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomScannerServiceResult{findings=[CustomScannersServiceFinding{file='index.html', lineNumber='290 (truncated)...]
+2022-01-06 20:28:31.724 DEBUG 143224 --- [http-nio-9221-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-06 20:33:06.619  INFO 145528 --- [main] c.h.a.c.CustomScannersServiceApplication : Starting CustomScannersServiceApplication on XPS-9560 with PID 145528 (/home/natanael/.vscode/extensions/hcltechnologies.hclappscancodesweep-1.2.0/lib/custom-scanners-service-1.0.12.jar started by natanael in /home/natanael/Documents/Research/AlpayNatanael.github.io)
+2022-01-06 20:33:06.622  INFO 145528 --- [main] c.h.a.c.CustomScannersServiceApplication : No active profile set, falling back to default profiles: default
+2022-01-06 20:33:09.083  INFO 145528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9221 (http)
+2022-01-06 20:33:09.101  INFO 145528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-06 20:33:09.102  INFO 145528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-01-06 20:33:09.222  INFO 145528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-06 20:33:09.223 DEBUG 145528 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2022-01-06 20:33:09.223  INFO 145528 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2519 ms
+2022-01-06 20:33:09.477 DEBUG 145528 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2022-01-06 20:33:09.477 DEBUG 145528 --- [main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2022-01-06 20:33:10.226 DEBUG 145528 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 22 mappings in 'requestMappingHandlerMapping'
+2022-01-06 20:33:10.267  INFO 145528 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-01-06 20:33:10.334  INFO 145528 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-01-06 20:33:10.413  INFO 145528 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-06 20:33:10.432 DEBUG 145528 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-01-06 20:33:10.601 DEBUG 145528 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-01-06 20:33:10.636 DEBUG 145528 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-01-06 20:33:10.673  INFO 145528 --- [Thread-0] c.h.a.s.s.services.ArticleResource       : Completed reading English articles
+2022-01-06 20:33:10.742  INFO 145528 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-01-06 20:33:10.774  INFO 145528 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-01-06 20:33:10.819  INFO 145528 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-01-06 20:33:11.093  INFO 145528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9221 (http) with context path ''
+2022-01-06 20:33:11.097  INFO 145528 --- [main] c.h.a.c.CustomScannersServiceApplication : Started CustomScannersServiceApplication in 5.726 seconds (JVM running for 6.441)
+2022-01-06 20:33:11.175  INFO 145528 --- [http-nio-9221-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-06 20:33:11.175  INFO 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-06 20:33:11.175 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-01-06 20:33:11.175 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Detected CookieLocaleResolver
+2022-01-06 20:33:11.175 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Detected CookieThemeResolver
+2022-01-06 20:33:11.180 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-01-06 20:33:11.180  INFO 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-01-06 20:33:11.192 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scanRules", parameters={}
+2022-01-06 20:33:11.198 DEBUG 145528 --- [http-nio-9221-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#getScanRules(String[])
+2022-01-06 20:33:11.218 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-06 20:33:11.225 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{Golang={com.ouncelabs.languagelite.golang.rules.CommMisconfig=CustomScannersServiceScanRule{ruleNam (truncated)...]
+2022-01-06 20:33:11.329 DEBUG 145528 --- [http-nio-9221-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-01-06 20:33:29.309 DEBUG 145528 --- [http-nio-9221-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/v1/scanFile", parameters={masked}
+2022-01-06 20:33:29.313 DEBUG 145528 --- [http-nio-9221-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#runScanFile(MultipartFile, String, int[])
+2022-01-06 20:33:29.470 DEBUG 145528 --- [http-nio-9221-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-01-06 20:33:29.471 DEBUG 145528 --- [http-nio-9221-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [CustomScannerServiceResult{findings=[CustomScannersServiceFinding{file='index.html', lineNumber='290 (truncated)...]
+2022-01-06 20:33:29.478 DEBUG 145528 --- [http-nio-9221-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
