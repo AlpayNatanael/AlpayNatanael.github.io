@@ -253,9 +253,9 @@ li:not(:last-child) {
     <a href="./pages/Me.html"><h2>About Me</h2></a>
 
 <div class="w3-content w3-display-container">
+<a href="./pages/Me.html"><img class="mySlides" src="./misc/p5.jpg" style="width:100%"></a>
 <a href="./pages/Me.html"><img class="mySlides" src="./misc/p3.jpg" style="width:100%"></a>
 <a href="./pages/Me.html"><img class="mySlides" src="./misc/p4.jpg" style="width:100%"></a>
-<a href="./pages/Me.html"><img class="mySlides" src="./misc/p5.jpg" style="width:100%"></a>
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -288,7 +288,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 7500); // Change image every 2 seconds
+  setTimeout(carousel, 10000); // Change image every 2 seconds
 }
 </script>
 
