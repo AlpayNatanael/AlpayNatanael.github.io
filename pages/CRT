@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.box {
+  width: 30%;
+  height: 200px;
+  border: 5px dashed #f7a239;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head> 
+<body>
+
+
+
+<div class="topnav">
+  <a href="./../index.html">Homepage</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+
+
+<div class="card">
+    <h1> On the Complex Representer Theorem and Relations between the Fock space and Superoscillations</h1>
+   <h3> Authora:  Natanael Alpay, Kamal Dikim, and Antonino De Martino </h3>
+
+    <h3> Abstract</h3>
+    <p> 
+We introduce the complex counterpart for the representer theorem in machine learning. We discuss some
+learning and minimization problems in RKHS, where we look for the correct input data set to retrieve the
+kernel as a solution to the regression minimization problem. In particular, we retrieve the superoscillations
+in the Fock space, the RBF kernel in the RBF space, and the Blaschke factors in the Hardy space. Finally,
+we give an extension to other minimization problems via different loss functions. Joint work with Dr. Kamal
+Diki and Dr. Antonino De Martino .
+    </p>
+</div>
+
+
+<div class="card">
+    <h2>Presetned at</h2>
+    <ol>
+    <li> <b>2024 Advances in Operator Theory with Applications
+to Mathematical Physics</b>:On the Complex Representer Theorem and Applications  <a href=" "><a>(Nov 19, 2024)</li>
+    </ol>
+</div>
+
+
+
+</body>
+</html>
