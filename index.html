@@ -4,6 +4,9 @@
 <head>
 <title>Hello World HTML</title>
 </head>
+
+
+
 <body>
 <h1>Natanael projects list</h1>
 
@@ -185,8 +188,87 @@ li:not(:last-child) {
             li > * {
                 font-weight:normal;
             }
-        </style>
+</style>
+
+
+<style>
+  .publication-list {
+    padding-left: 1.6em;
+  }
+
+  .publication-list > li {
+    margin-bottom: 0.4em;
+    padding-left: 0.25em;
+    font-weight: normal;
+    line-height: 1.65;
+  }
+
+  .publication-list .publication-title {
+    color: #174a72;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .publication-list a:hover,
+  .publication-list a:focus-visible {
+    color: #a14b00;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .publication-list .publication-note {
+    display: block;
+    margin-top: 0.2em;
+    color: #555;
+    font-size: 0.92em;
+  }
+</style>
+
+
+
+
+
+<style>
+  .talk-list {
+    padding-left: 1.6em;
+  }
+
+  .talk-list > li {
+    margin-bottom: 0.4em;
+    padding-left: 0.25em;
+    font-weight: normal;
+    line-height: 1.4;
+  }
+
+  .talk-list a {
+    color: #174a72;
+    text-decoration: none;
+  }
+
+  .talk-list .conference-name {
+    font-weight: 600;
+  }
+
+  .talk-list a:hover,
+  .talk-list a:focus-visible {
+    color: #a14b00;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .talk-list .talk-date {
+    color: #555;
+  }
+</style>
+
+
+
 </head>
+
+
+
 <body>
 
 <div class="header">
@@ -219,76 +301,340 @@ li:not(:last-child) {
       </div>
       
 
-    <div class="card">
-      <h2> <b>Research Publications</b></h2>
-      <ol>
-		  <li> <a href="https://arxiv.org/abs/2608.25262"> The sharp discrete Hardy inequality on \( \mathbb{Z}^3 \)
- (2026)</a></li>    
-		    <li> <a href="https://arxiv.org/abs/2607.11069"> Sharp Ternary Martingale Isoperimetry and n-adic Takagi-Type Lower Bounds
- (2026)</a></li>    
-		  		  <li> <a href="https://arxiv.org/abs/2604.23017"> Complex SGD and Directional Bias in Reproducing Kernel Hilbert Spaces
- (2026)</a></li>    
-<li> <a href="https://arxiv.org/abs/2604.22165">Representer Theorem in Complex Reproducing Kernel Hilbert Spaces with Applications to Fock and Hardy Spaces and Superoscillations (2026)</a></li>  
-		  <li> <a href="https://arxiv.org/abs/2601.11829"> Fractional Supershifts and their associated Cauchy Evolution problems
- (2026)</a></li>      
-	<li> <a href="https://arxiv.org/abs/2502.16045"> Lower Bounds for Dyadic Square Functions of indicator functions of sets
- (2025)</a></li>      
-        <li> <a href="https://www.sciencedirect.com/science/article/pii/S0022247X25000952"> Thermal States on Mittag-Leffler Fock Space of the Slitted Plane(2025)</a></li>
-	<li><a href="https://www.sciencedirect.com/science/article/pii/S0022247X25002616">On a Fueter regular Mittag Leffler Bargmann transform (2024)</a></li>
-        <li><a href="https://www.sciencedirect.com/science/article/pii/S0022247X23004614?via%3Dihub">On the Mittag Leffler Bargmann (MLB) transform (2023)</a></li>
-        <li> <a href="./pages/FockGen.html"> 	<!--Alpay N., Cerejeiras P., and Kähler U.:--> Generalized Fock space and fractional derivatives with Applications to Uniqueness of Sampling and Interpolation Sets (submitted)</a></li>
-        <li><a href="https://iupress.istanbul.edu.tr/en/journal/ijmath/article/a-new-characterization-of-the-hardy-space-and-of-other-hilbert-spaces-of-analytic-functions"> <!-- Alpay N. -->A new characterization of the Hardy space and of other spaces of analytic functions (2023) </a></li>
-	      <!--./pages/Hardy.html-->
-        <li> <a href="./pages/bi-al.html"> <!--Alpay N., Jipsen P., Sugimoto M.: --> Unary-determined distributive l-magmas and bunched implication algebras (2021) </a></li>
-        <li> <a href="./pages/cdi.html"> <!--Alpay N., Jipsen P.,: -->Commutative doubly-idempotent semirings determined by chains and by preorder forests (2020) </a></li>
-      </ol>
-      <!--
-      <h2> Additional Reseach Projects in Progress</h2>
-      <ol>
-        <li> <a href="./pages/"> Quantum probabilities with generelized Fock space</a></li>
-      </ol>
-      -->
-    </div>
+<div class="card" id="publications">
+  <h2><b>Research Publications and Preprints</b></h2>
+
+<ol class="publication-list" reversed>
+    <li>
+      N. Alpay.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2610.05421">Sharp discrete Hardy constants in low dimensions</a>.
+      Preprint, arXiv:2610.05421 (2026).
+    </li>
+
+    <li>
+      N. Alpay.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2608.25262">The sharp discrete Hardy inequality on &#8484;<sup>3</sup></a>.
+      Preprint, arXiv:2608.25262 (2026).
+    </li>
+
+    <li>
+      N. Alpay, P. Cerejeiras, and U. K&auml;hler.
+      <a class="publication-title"
+         href="https://doi.org/10.1016/j.rinam.2026.100737">Generalized Fock-space and fractional derivatives: Uniqueness of sampling and interpolation sets</a>.
+      <em>Results in Applied Mathematics</em> 31 (2026), article 100737.
+    </li>
+
+    <li>
+      N. Alpay.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2607.11069">Sharp Ternary Martingale Isoperimetry and <i>n</i>-adic Takagi-Type Lower Bounds</a>.
+      Preprint, arXiv:2607.11069 (2026).
+    </li>
+
+    <li>
+      N. Alpay and E. Battaglia.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2604.23017">Complex Stochastic Gradient Descent and Directional Bias in Reproducing Kernel Hilbert Spaces</a>.
+      Preprint, arXiv:2604.23017 (2026).
+    </li>
+
+    <li>
+      N. Alpay, A. De Martino, and K. Diki.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2604.22165">Representer Theorem in Complex Reproducing Kernel Hilbert Spaces with Applications to Fock and Hardy Spaces and Superoscillations</a>.
+      Preprint, arXiv:2604.22165 (2026).
+    </li>
+
+    <li>
+      N. Alpay.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2601.11829">Fractional Supershifts and their associated Cauchy Evolution problems</a>.
+      Preprint, arXiv:2601.11829 (2026).
+    </li>
+
+    <li>
+      N. Alpay, A. De Martino, and K. Diki.
+      <a class="publication-title"
+         href="https://doi.org/10.1016/j.jmaa.2025.129480">The Fueter Mittag-Leffler Bargmann transform</a>.
+      <em>Journal of Mathematical Analysis and Applications</em>
+      549 (2025), no. 2, article 129480.
+    </li>
+
+    <li>
+      N. Alpay and T. C. John.
+      <a class="publication-title"
+         href="https://doi.org/10.1016/j.jmaa.2025.129314">Thermal states on Mittag-Leffler Fock space of the slitted plane</a>.
+      <em>Journal of Mathematical Analysis and Applications</em>
+      547 (2025), no. 1, article 129314.
+    </li>
+
+    <li>
+      N. Alpay and P. Ivanisvili.
+      <a class="publication-title"
+         href="https://arxiv.org/abs/2502.16045">Sharp Lower Bounds for Dyadic Square Functions of indicator functions of sets</a>.
+      Preprint, arXiv:2502.16045 (2025; revised 2026).
+    </li>
+
+    <li>
+      N. Alpay, P. Jipsen, and M. Sugimoto.
+      <a class="publication-title"
+         href="https://doi.org/10.46298/lmcs-20(1:12)2024">Varieties of unary-determined distributive &#8467;-magmas and bunched implication algebras</a>.
+      <em>Logical Methods in Computer Science</em>
+      20 (2024), no. 1, article 12.
+    </li>
+
+    <li>
+      N. Alpay and K. Diki.
+      <a class="publication-title"
+         href="https://doi.org/10.1016/j.jmaa.2023.127458">On the Mittag Leffler Bargmann (MLB) transform</a>.
+      <em>Journal of Mathematical Analysis and Applications</em>
+      527 (2023), no. 2, article 127458.
+    </li>
+
+    <li>
+      N. Alpay.
+      <a class="publication-title"
+         href="https://doi.org/10.26650/ijmath.2023.00005">A new characterization of the Hardy space and of other Hilbert spaces of analytic functions</a>.
+      <em>Istanbul Journal of Mathematics</em>
+      1 (2023), no. 1, pp. 1&ndash;11.
+    </li>
+
+    <li>
+      N. Alpay, P. Jipsen, and M. Sugimoto.
+      <a class="publication-title"
+         href="https://doi.org/10.1007/978-3-030-88701-8_2">Unary-Determined Distributive &#8467;-magmas and Bunched Implication Algebras</a>.
+      In <em>Relational and Algebraic Methods in Computer Science
+      (RAMiCS 2021)</em>, Lecture Notes in Computer Science 13027,
+      Springer, 2021, pp. 19&ndash;36.
+      <span class="publication-note">
+        <a href="https://doi.org/10.46298/lmcs-20(1:12)2024">Expanded journal version (2024)</a>.
+      </span>
+    </li>
+
+    <li>
+      N. Alpay and P. Jipsen.
+      <a class="publication-title"
+         href="https://doi.org/10.1007/978-3-030-43520-2_1">Commutative Doubly-Idempotent Semirings Determined by Chains and by Preorder Forests</a>.
+      In <em>Relational and Algebraic Methods in Computer Science
+      (RAMiCS 2020)</em>, Lecture Notes in Computer Science 12062,
+      Springer, 2020, pp. 1&ndash;14.
+    </li>
+  </ol>
+</div>
     
-    <div class="card">
-      <h2>Research Talks</h2>
-    <ol>
-		<li> <a href="https://iwota-2026.fsg.ulaval.ca/sessions"><b> International Workshop on Operator Theory and its Applications 2026: </b> On the Complex Representer Theorem and Applications to Minimization Problems Over Reproducing kernel Hilbert spaces.
-</a> (August 5, 2026)  </li>
-				<li> <a href="https://iwota-2026.fsg.ulaval.ca/sessions"><b> International Workshop on Operator Theory and its Applications 2026: </b> Lower Bounds for Dyadic Square Functions of indicator functions of sets
-</a> (August 4, 2026)  </li>
-		<li> <a href="https://iwota-2026.fsg.ulaval.ca/sessions"><b>International Workshop on Operator Theory and its Applications 2026: </b> Generalized Fock-space and fractional derivatives: Uniqueness of Sampling and Interpolation Sets
-</a> (August 3, 2026)  </li>
-		      <li> <a href="https://www.socams.org/schedule"><b> Southern California
-Applied Mathematics Symposium 2026</b>: On the Complex SGD with Application to Kernel Regression in Reproducing Kernel Hilbert Spaces and Directional Bias
-</a> (April 25, 2026)  </li>
-      <li> <a href="https://sites.google.com/chapman.edu/2026-hypercomplex-workshop/main-page"><b> 2026 Workshop On Applications Of Hypercomplex Analysis </b>: Fractional Supershifts and their associated Cauchy Evolution problems
-</a> (Jan 16, 2026)  </li>
-		
-      <li> <a href="https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Paper/52625"><b> Joint Mathematical Meeting 2026</b>: The Mittag-Leffler Bargmann transform, and its extension to the hypercomplex setting</a> (Jan 4, 2026)  </li>
-	    	          <li> <a href="https://www.utwente.nl/en/iwota2025/DownloadableFiles/iwota2025-book-of-abstracts-version1207.pdf"><b> IWOTA 2025</b>: Thermal States on Mittag Leffler Fock Space of the Slitted Plane</a> (July 18, 2025)</li>
-	          <li> <a href="https://www.utwente.nl/en/iwota2025/DownloadableFiles/iwota2025-book-of-abstracts-version1207.pdf"><b> IWOTA 2025</b>: The Mittag-Leffler Bargmann transform, and its extension to the quaternionic setting</a> (July 18, 2025)</li>
-	    <li> <a href="https://www.socams.org/schedule"  > <b> 	   Southern california Applied mathematics symposium
- </b>:Special Functions as Solutions to The Least Square Problems <a>(April 26, 2025)</li>  
-	    	<li> <a href="https://sweet.ua.pt/pceres/Complex2025/Webpage/Workshop.html"  > <b> 	    2025 22nd Annual Workshop on Applications and Generalizations of Complex Analysis
- </b>:Lower Bounds for Dyadic Square Functions of indicator functions of sets <a>( March 29, 2025)</li>  
-	 <li> <a href="https://cellfate.uci.edu/2025mddls/"> <b> 	    2025 Mathematics of Data, Dynamics, and Life Sciences (MDDLS) 
- </b>:On the Complex Representer Theorem and Applications to Minimization Problems <a>( March 20, 2025)</li>  
-	<li> <a href="https://sites.google.com/view/2024-math-physics-workshop"> <b> 2025 Advances in Operator Theory with Applications to Mathematical Physics </b>: On the complex representer theorem and applications <a>(Nov 19, 2024)</li>  
-    <li> <a href="https://sites.google.com/chapman.edu/2024schurworkshop/conference-schedule?authuser=0"><b> 2024 Workshop on Schur Analysis and Applications to Hypercomplex Analysis, Neural Networks and Linear Systems </b>: Thermal States on Mittag-Leffler Fock Space of the Slitted Plane <a>(Jan 11, 2024)</li>  
-    <li> <a href="https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_wednesday.html#2300:AMSCP8A"><b> Joint Mathematical Meeting 2024 </b>: Thermal States on Mittag Leffler Fock Space of the Slitted Plane <a>(Jan 4, 2024)</li>  
-    <li> <a href="./pages/bq_transform.html "><b> 2023 Heat Flow, two-point inequalities, and beyond</b>: On Complex Hypercontractivity after S. Janson. <a>(Oct 31, 2023)</li>  
-    <li> <a href="./pages/bq_transform.html "><b> 2022 Advances in Operator Theory with Applications to Mathematical Physics</b>: On the Mittag Leffler Bargmann (MLB) transform <a>(Nov 15, 2022)</li>  
-    <li> <a href="./pages/bq_transform.html "><b> 2022 Workshop on Operator Theory with an Eye on Linear Systems and Hypercomplex Analysis</b>: On the Mittag Leffler Bargmann (MLB) transform <a>(May 31, 2022)</li>  
-      <li> <a href=" "><b>SCCUR2021</b>: Generalized Fock space using fractional derivatives with Applications to Uniqueness of Sampling and Interpolation Sets. <a>(Nov 20, 2021)</li>
-      <li> <a href="https://www1.chapman.edu/~mbvajiac/conferences/IWOTA-Abstracts.pdf"><b>International Workshop on Operator Theory and its Applications 2021</b>: Generalized Fock space and fractional derivative  (Special Session 3, Page 22)</a> (Aug 11, 2021)</li>
-      <li> <a href="https://link.springer.com/chapter/10.1007/978-3-030-43520-2_1"> <b>RAMiCS 2020</b>: (conference proceedings)</a> (Oct 29, 2020)</li> 
-      <li> <a href="https://scalar.chapman.edu/scalar/program-honors-and-capstone-conference-/natanael-alpay"><b>Capstone Presentation 2020</b>: The Structure of Distributive Idempotent Weakly Conservative Lattice-ordered Magmas. (abstract) </a>(May 9, 2020) </li>    
-      <li> <a href="https://scalar.chapman.edu/scalar/program-honors-and-capstone-conference-/natanael-alpay-1"><b>Capstone Presentation 2020</b>: Minimal surfaces.  (Abstract) </a>(May 9, 2020)</li>
-      <li> <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_program_friday.html"><b>JMM 2020 National Meeting</b>:  Commutative doubly-idempotent semirings determined by chains and by preorder forests.</a> <a href="https://jointmathematicsmeetings.org/amsmtgs/2245_abstracts/1154-06-2234.pdf">(abstract) </a> (Jan 17, 2020)</li> 
-      <li> <a href="http://www.ams.org/meetings/sectional/2266_progfull.html"><b>AMS 2019 Sectional Meeting</b>:  Some structural results about commutative doubly-idempotent semirings.</a> <a href="http://www.ams.org/amsmtgs/2266_abstracts/1153-08-471.pdf">(abstract) </a>(Nov 10 17, 2019) </li> 
-    </ol>
-    </div>
+    <div class="card" id="research-talks">
+  <h2>Research Talks and Conferences</h2>
+
+  <ol class="talk-list" reversed>
+
+    <li>
+      <a href="https://iwota-2026.fsg.ulaval.ca/sessions">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2026:</span>
+        On the Complex Representer Theorem and Applications to Minimization Problems Over Reproducing Kernel Hilbert Spaces
+      </a>
+      <time class="talk-date" datetime="2026-08-05">(August 5, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://iwota-2026.fsg.ulaval.ca/sessions">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2026:</span>
+        Lower Bounds for Dyadic Square Functions of Indicator Functions of Sets
+      </a>
+      <time class="talk-date" datetime="2026-08-04">(August 4, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://iwota-2026.fsg.ulaval.ca/sessions">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2026:</span>
+        Generalized Fock-Space and Fractional Derivatives: Uniqueness of Sampling and Interpolation Sets
+      </a>
+      <time class="talk-date" datetime="2026-08-03">(August 3, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.socams.org/schedule">
+        <span class="conference-name">Southern California Applied Mathematics Symposium 2026:</span>
+        On the Complex SGD with Application to Kernel Regression in Reproducing Kernel Hilbert Spaces and Directional Bias
+      </a>
+      <time class="talk-date" datetime="2026-04-25">(April 25, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://sites.google.com/chapman.edu/2026-hypercomplex-workshop/main-page">
+        <span class="conference-name">Workshop on Applications of Hypercomplex Analysis 2026:</span>
+        Fractional Supershifts and Their Associated Cauchy Evolution Problems
+      </a>
+      <time class="talk-date" datetime="2026-01-16">(January 16, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13722">
+        <span class="conference-name">Joint Mathematics Meetings 2026:</span>
+        Lower Bounds for Dyadic Square Functions of Indicator Functions of Sets
+      </a>
+      <time class="talk-date" datetime="2026-01-06">(January 6, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Paper/52625">
+        <span class="conference-name">Joint Mathematics Meetings 2026:</span>
+        The Mittag-Leffler Bargmann Transform, and Its Extension to the Hypercomplex Setting
+      </a>
+      <time class="talk-date" datetime="2026-01-04">(January 4, 2026)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.utwente.nl/en/iwota2025/DownloadableFiles/iwota2025-book-of-abstracts-version1207.pdf">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2025:</span>
+        Thermal States on Mittag-Leffler Fock Space of the Slitted Plane
+      </a>
+      <time class="talk-date" datetime="2025-07-18">(July 18, 2025)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.utwente.nl/en/iwota2025/DownloadableFiles/iwota2025-book-of-abstracts-version1207.pdf">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2025:</span>
+        The Mittag-Leffler Bargmann Transform, and Its Extension to the Quaternionic Setting
+      </a>
+      <time class="talk-date" datetime="2025-07-18">(July 18, 2025)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.math.uci.edu/node/38364">
+        <span class="conference-name">Southern California Applied Mathematics Symposium 2025:</span>
+        Special Functions as Solutions to the Least Square Problems
+      </a>
+      <time class="talk-date" datetime="2025-04-26">(April 26, 2025)</time>.
+    </li>
+
+    <li>
+      <a href="https://sweet.ua.pt/pceres/Complex2025/Webpage/Workshop.html">
+        <span class="conference-name">22nd Annual Workshop on Applications and Generalizations of Complex Analysis 2025:</span>
+        Lower Bounds for Dyadic Square Functions of Indicator Functions of Sets
+      </a>
+      <time class="talk-date" datetime="2025-03-29">(March 29, 2025)</time>.
+    </li>
+
+    <li>
+      <a href="https://cellfate.uci.edu/2025mddls/">
+        <span class="conference-name">Mathematics of Data, Dynamics, and Life Sciences (MDDLS) 2025:</span>
+        On the Complex Representer Theorem and Applications to Minimization Problems
+      </a>
+      <time class="talk-date" datetime="2025-03-20">(March 20, 2025)</time>.
+    </li>
+
+    <li>
+      <a href="https://sites.google.com/view/2024-math-physics-workshop">
+        <span class="conference-name">Advances in Operator Theory with Applications to Mathematical Physics 2024:</span>
+        On the Complex Representer Theorem and Applications
+      </a>
+      <time class="talk-date" datetime="2024-11-19">(November 19, 2024)</time>.
+    </li>
+
+    <li>
+      <a href="https://sites.google.com/chapman.edu/2024schurworkshop/conference-schedule">
+        <span class="conference-name">Workshop on Schur Analysis and Applications to Hypercomplex Analysis, Neural Networks and Linear Systems 2024:</span>
+        Thermal States on Mittag-Leffler Fock Space of the Slitted Plane
+      </a>
+      <time class="talk-date" datetime="2024-01-11">(January 11, 2024)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.jointmathematicsmeetings.org/meetings/national/jmm2024/2300_program_wednesday.html#2300:AMSCP8A">
+        <span class="conference-name">Joint Mathematics Meetings 2024:</span>
+        Thermal States on Mittag-Leffler Fock Space of the Slitted Plane
+      </a>
+      <time class="talk-date" datetime="2024-01-04">(January 4, 2024)</time>.
+    </li>
+
+    <li>
+      <a href="https://paatai.github.io/schools/heat.html">
+        <span class="conference-name">Heat Flow, Two-Point Inequalities, and Beyond 2023:</span>
+        On Complex Hypercontractivity after S. Janson
+      </a>
+      <time class="talk-date" datetime="2023-10-31">(October 31, 2023)</time>.
+    </li>
+
+    <li>
+      <a href="https://www1.chapman.edu/~alpay/conf2022/conf2022.html">
+        <span class="conference-name">Advances in Operator Theory with Applications to Mathematical Physics 2022:</span>
+        On the Mittag-Leffler Bargmann (MLB) Transform
+      </a>
+      <time class="talk-date" datetime="2022-11-15">(November 15, 2022)</time>.
+    </li>
+
+    <li>
+      <a href="https://www1.chapman.edu/~mbvajiac/conferences/2022Conference.html">
+        <span class="conference-name">Workshop on Operator Theory with an Eye on Linear Systems and Hypercomplex Analysis 2022:</span>
+        On the Mittag-Leffler Bargmann (MLB) Transform
+      </a>
+      <time class="talk-date" datetime="2022-05-31">(May 31, 2022)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.sccur.org/2021-abstracts">
+        <span class="conference-name">SCCUR 2021:</span>
+        Generalized Fock Space Using Fractional Derivatives with Applications to Uniqueness of Sampling and Interpolation Sets
+      </a>
+      <time class="talk-date" datetime="2021-11-20">(November 20, 2021)</time>.
+    </li>
+
+    <li>
+      <a href="https://www1.chapman.edu/~mbvajiac/conferences/IWOTA-Abstracts.pdf">
+        <span class="conference-name">International Workshop on Operator Theory and its Applications 2021:</span>
+        Generalized Fock Space and Fractional Derivative
+      </a>
+      (Special Session 3, abstract p. 22)
+      <time class="talk-date" datetime="2021-08-11">(August 11, 2021)</time>.
+    </li>
+
+    <li>
+      <a href="https://link.springer.com/chapter/10.1007/978-3-030-43520-2_1">
+        <span class="conference-name">RAMiCS 2020:</span>
+        Commutative Doubly-Idempotent Semirings Determined by Chains and by Preorder Forests
+      </a>
+      (conference proceedings)
+      <time class="talk-date" datetime="2020-10-29">(October 29, 2020)</time>.
+    </li>
+
+    <li>
+      <a href="https://scalar.chapman.edu/scalar/program-honors-and-capstone-conference-/natanael-alpay">
+        <span class="conference-name">Capstone Presentation 2020:</span>
+        The Structure of Distributive Idempotent Weakly Conservative Lattice-Ordered Magmas
+      </a>
+      <time class="talk-date" datetime="2020-05-09">(May 9, 2020)</time>.
+    </li>
+
+    <li>
+      <a href="https://scalar.chapman.edu/scalar/program-honors-and-capstone-conference-/natanael-alpay-1">
+        <span class="conference-name">Capstone Presentation 2020:</span>
+        Minimal Surfaces
+      </a>
+      <time class="talk-date" datetime="2020-05-09">(May 9, 2020)</time>.
+    </li>
+
+    <li>
+      <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_program_friday.html">
+        <span class="conference-name">Joint Mathematics Meetings 2020:</span>
+        Commutative Doubly-Idempotent Semirings Determined by Chains and by Preorder Forests
+      </a>
+      <a href="https://jointmathematicsmeetings.org/amsmtgs/2245_abstracts/1154-06-2234.pdf">[abstract]</a>
+      <time class="talk-date" datetime="2020-01-17">(January 17, 2020)</time>.
+    </li>
+
+    <li>
+      <a href="https://www.ams.org/meetings/sectional/2266_progfull.html">
+        <span class="conference-name">AMS Fall Western Sectional Meeting 2019:</span>
+        Some Structural Results about Commutative Doubly-Idempotent Semirings
+      </a>
+      <a href="https://www.ams.org/amsmtgs/2266_abstracts/1153-08-471.pdf">[abstract]</a>
+      <time class="talk-date" datetime="2019-11">(November 2019)</time>.
+    </li>
+
+  </ol>
+</div>
 
     <div class="card">
       <h2>Posters</h2>
@@ -333,7 +679,7 @@ Detection compared to Classical Disproportionality  </a></li>
 </div>
       <!--<img src="./misc/p3.jpg">-->
       <p> Graduate Student in Mathematics at the University of California, Irvine.</p>
-      <p>Undergraduate from Chapman University. BS in Mathematics, Phyiscs and Computer Science. BA in French.</p>
+      <p>Undergraduate from Chapman University. BS in Mathematics, Physics and Computer Science. BA in French.</p>
 	<p>Email: nalpay@uci.edu </p>
     </div>
     <div class="topnav">
