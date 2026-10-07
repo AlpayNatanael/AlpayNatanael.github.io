@@ -1,27 +1,13 @@
-<!--
 <!DOCTYPE html>
-<html>
-<head>
-<title>Hello World HTML</title>
-</head>
-<body>
-<h1>Natanael projects list</h1>
+<html lang="en">
 
-	<nav>
-		<ul>
-			<li><a href="https://AlpayNatanael.github.io/VRLattices/"> VR Objects</a></li>
-			<li><a href="https://AlpayNatanael.github.io/VR-color-objects/"> VR colorful Objects</a></li>
-			<li><a href="#">Links</a></li>
-		</ul>
-	</nav>
-</body>
-</html>
--->
-<!DOCTYPE html>
-<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer and Data Science | Natanael S. Alpay</title>
+<meta name="description" content="Machine learning, pharmacovigilance, deep hedging, scientific computing, and data analysis projects by Natanael S. Alpay.">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<head>
 <style>
 * {
   box-sizing: border-box;
@@ -186,6 +172,108 @@ li:not(:last-child) {
                 font-weight:normal;
             }
         </style>
+<style>
+.cs-content {
+  color: #262626;
+}
+
+.cs-content h2 {
+  margin: 0 0 0.65em;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cs-content .intro {
+  margin: 0;
+  max-width: 78ch;
+  line-height: 1.6;
+}
+
+.cs-content .project {
+  padding: 1.1em 0;
+  border-bottom: 1px solid #e1e7eb;
+}
+
+.cs-content .project:first-of-type {
+  padding-top: 0;
+}
+
+.cs-content .project:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.cs-content .project h3 {
+  margin: 0 0 0.3em;
+  color: #174a72;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.cs-content .project p,
+.cs-content .skills p,
+.cs-content .experience p {
+  margin: 0.45em 0;
+  line-height: 1.55;
+}
+
+.cs-content .project .project-meta {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.cs-content .project-status {
+  display: inline-block;
+  margin: 0.1em 0 0.35em;
+  padding: 0.15em 0.55em;
+  border: 1px solid #cedee9;
+  border-radius: 3px;
+  background: #edf4f8;
+  color: #174a72;
+  font-size: 0.85em;
+}
+
+.cs-content .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.2em;
+  margin-top: 0.6em;
+}
+
+.cs-content a {
+  color: #174a72;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.cs-content a:hover,
+.cs-content a:focus-visible {
+  color: #a14b00;
+  font-style: normal;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+@media screen and (max-width: 600px) {
+  .cs-content .card {
+    padding: 18px;
+  }
+
+  .cs-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .cs-content .project h3 {
+    font-size: 1.1rem;
+  }
+}
+
+</style>
 </head>
 <body>
 
@@ -200,131 +288,270 @@ li:not(:last-child) {
 
     <div class="topnav">
       <a href="./../pages/Me.html">About Me</a>
-        <a href="https://www.linkedin.com/in/natanael-alpay-99802a19a/">Linkedin</a>
+        <a href="https://www.linkedin.com/in/natanael-alpay-99802a19a/">LinkedIn</a>
         <a href="https://github.com/AlpayNatanael">GitHub</a>
-        <a href="	 https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
+        <a href="https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
 	    <a href="https://www.dropbox.com/scl/fi/wfyblbxrjdyydltnlr5xt/NA_CV.pdf?rlkey=p6uf7ukhhgz40z3236slxli53&dl=0"> CV </a>
             <a href="./teaching.html"> Teaching </a>
-        <a href="#" style="float:right">Link</a>
+        
       </div>
 
       
 
       
-      <div class="nav">
-        <!-- <h2> <b>Research Publications</b></h2> -->
-        <a href="./../index.html"><b>Mathematics</b></a>
-        <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a href="./../pages/cs.html"><b>Computer and Data Science</b></a>
-      </div>
+      <nav class="nav" aria-label="Research areas" style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.6em 1.5em;font-size:24px;">
+        <a href="../index.html"><b>Mathematics</b></a>
+        <a href="./cs.html" aria-current="page"><b>Computer and Data Science</b></a>
+      </nav>
       
-<!-- 
-    
-      <h1 style="text-align:center"><b>Page under development.</b></h1> -->
 
-      <div style="text-align:center">
-        <!-- <h1><b>Page under development.</b></h1> -->
-        <img src="./../misc/building1.png" alt="Under construction" style="max-width:2000px;width:100%;height:auto;">
+
+<div class="cs-content">
+
+  <section class="card" aria-labelledby="computing-title">
+    <h2 id="computing-title">Computer and Data Science</h2>
+    <p class="intro">
+      I work on machine learning, statistical modeling, and scientific
+      computing, with an emphasis on the mathematics behind the methods
+      and their implementation. My projects range from pharmacovigilance
+      and financial risk to kernel methods and mathematical visualization.
+    </p>
+  </section>
+
+  <section class="card" aria-labelledby="ml-projects-title">
+    <h2 id="ml-projects-title">Research and Machine Learning</h2>
+
+    <article class="project" id="bellman-hedging">
+      <h3>Bellman Deep Hedging and Portfolio Compression</h3>
+      <span class="project-status">Work in progress</span>
+      <p>
+        I am studying how low-dimensional representations of financial
+        portfolios affect hedging decisions. The project connects
+        mathematical bounds on representation and learning errors with
+        Bellman-based benchmarks and the development of neural-network
+        trading strategies, accounting for transaction costs and trading
+        constraints.
+      </p>
+      <p class="project-meta">
+        Portfolio compression &middot; Risk-sensitive optimization
+        &middot; Dynamic programming
+      </p>
+    </article>
+
+    <article class="project" id="faers">
+      <h3>FAERS: Machine Learning for Drug Safety Signal Prioritization</h3>
+      <p>
+        I developed and evaluated gradient-boosted models to prioritize
+        drug&ndash;adverse-event reporting signals in the FDA Adverse Event
+        Reporting System (FAERS). The study combines classical
+        disproportionality measures with report-quality information and
+        examines performance on future quarters, calibration, and the
+        contribution of different feature groups.
+      </p>
+      <p class="project-meta">
+        Gradient boosting &middot; Temporal validation
+        &middot; Calibration
+      </p>
+      <div class="project-links">
+        <a href="../posters/BSSC_Poster_Natanael_alpay.pdf">Poster (PDF)</a>
       </div>
+    </article>
 
-	
-	  
-      <div class="card">
-  
-        <h2><b> Languages: </b> Python, Java, SQL, R, C++, C#, Java, Java-script, Matlab, Mathmatica .</h2>
-        <!-- <h2> <b>Projects</b></h2>
-        <ol>
-          <li>Python</li>
-          <li>SQL</li>
-          <li>R</li>
-          <li>C++</li>
-          <li>JAVA</li>
-          <li>
-        ....
-          </li>
-        </ol> -->
-  
+    <article class="project" id="vaers">
+      <h3>VAERS: Early Prioritization of Vaccine&ndash;Symptom Signals</h3>
+      <p>
+        Using the Vaccine Adverse Event Reporting System (VAERS), I built
+        a workflow that ranks vaccine&ndash;symptom pairs by their
+        likelihood of meeting a reporting-signal criterion in the following
+        quarter. The project compares logistic regression and calibrated
+        gradient boosting with classical statistical scores to prioritize
+        pairs for expert review.
+      </p>
+      <p class="project-meta">
+        Logistic regression &middot; Gradient boosting
+        &middot; Forecasting
+      </p>
+      <div class="project-links">
+        <a href="https://ww2.amstat.org/meetings/aipm/2026/posterpresentations.cfm">Poster abstract</a>
+        <a href="https://care.choc.org/2026-pediatric-and-lifespan-data-science-conference-from-insight-to-real-world-impact/">CHOC conference presentation</a>
       </div>
+      <!-- The full VAERS poster PDF was not included in the website ZIP.
+           Replace the poster-abstract link with its PDF path after upload. -->
+    </article>
 
+    <article class="project" id="complex-sgd">
+      <h3>Complex Stochastic Gradient Descent and Kernel Regression</h3>
+      <p>
+        In joint work with Emeric Battaglia, I study stochastic gradient
+        descent for complex-valued kernel regression. The project combines
+        convergence and directional-bias analysis with numerical experiments
+        in complex reproducing kernel Hilbert spaces, including the recovery
+        of superoscillatory functions and Blaschke products.
+      </p>
+      <p class="project-meta">
+        Stochastic optimization &middot; Kernel methods
+        &middot; Numerical analysis
+      </p>
+      <div class="project-links">
+        <a href="https://arxiv.org/abs/2604.23017">Preprint on arXiv</a>
+      </div>
+    </article>
 
-    <div class="card">
-  
-      <h2> <b>Projects</b></h2>
-      <ol>
-        <li>Machine Learning: <b>  Studied the theorey behind implementations of machine learning code and implemented generaliations of SVM and RBF methods.</b> </li>
-        <li> Data Analysis: <b> Forecasting real-world financial data using ARIMA and Holt-Winters models stock prices for the next five years using R. 
-        </li>
-        <li> Data-Base: <b> Web iterface based on pything and SQL to learn and see relation between all 118 elements.</b> </li>
-        <li>  Optimiazation: <b> Red Black tree extention to Binary search tree implementation in C++.</b> </li>
-        <li>VR and web itnerface:<b> web iterface to visualize mathemataics object in VR generated via algorithm in Java script.</b> </li> 
-        <li>
-      ....
-        </li>
-      </ol>
+    <article class="project" id="ml-implementation">
+      <h3>Machine Learning: Theory and Implementation</h3>
+      <p>
+        As an undergraduate researcher working with Mihaela Vajiac,
+        I studied and implemented classification methods, including
+        perceptrons, radial basis function networks, and support vector
+        machines, using Python and MATLAB. The project connects the
+        mathematical foundations of these methods with numerical experiments
+        and visualizations of decision boundaries.
+      </p>
+      <p class="project-meta">
+        Python &middot; MATLAB &middot; Classification
+        &middot; Kernel methods
+      </p>
+      <div class="project-links">
+        <a href="../posters/MNT_Poster_v2.pdf">Poster (PDF)</a>
+        <a href="./ML.html">Project page</a>
+      </div>
+    </article>
+  </section>
 
-    </div>
+  <section class="card" aria-labelledby="computational-projects-title">
+    <h2 id="computational-projects-title">Scientific Computing and Data Analysis</h2>
 
-    <div class="card">
-  
+    <article class="project" id="lattice-visualization">
+      <h3>Mathematical Structures in 3D and Virtual Reality</h3>
+      <p>
+        Working with Peter Jipsen, I developed JavaScript visualizations
+        of finite lattices using Babylon.js. The project renders algebraic
+        structures as interactive 3D objects that can be explored in a web
+        browser or with a virtual reality headset.
+      </p>
+      <p class="project-meta">
+        JavaScript &middot; Babylon.js &middot; Mathematical visualization
+      </p>
+      <div class="project-links">
+        <a href="https://alpaynatanael.github.io/VRLattices/">Interactive demo</a>
+        <a href="../posters/VR_Lattices_2021.pdf">Poster (PDF)</a>
+        <a href="./VR.html">Project page</a>
+      </div>
+    </article>
 
-      <h2> <b>Experience</b></h2>
-      <ol>
-        <li>Research assistemt: Data analysit and data collection internsihip at the Chapman Brain Institute</li>
-        <li>Student research implemenign theoretical machine learning in matlab and python </li>
+    <article class="project" id="collision-analysis">
+      <h3>Exploratory Analysis of New York City Traffic Collisions</h3>
+      <p>
+        I analyzed New York City motor vehicle collision records, using
+        data cleaning and visualization to examine recorded crash
+        characteristics and changes around the COVID-19 pandemic. The
+        project focuses on descriptive comparisons and patterns in the
+        reported data.
+      </p>
+      <p class="project-meta">
+        Data cleaning &middot; Exploratory analysis &middot; Visualization
+      </p>
+      <div class="project-links">
+        <a href="../posters/NY_transport.pdf">Poster (PDF)</a>
+      </div>
+    </article>
 
-      ....
-        </li>
-      </ol>
+    <article class="project" id="time-series">
+      <h3>Financial Time-Series Modeling</h3>
+      <p>
+        I applied ARIMA and Holt&ndash;Winters models in R to financial
+        time series. The project focused on fitting statistical models,
+        examining trends, and producing and visualizing forecasts.
+      </p>
+      <p class="project-meta">R &middot; ARIMA &middot; Holt&ndash;Winters</p>
+    </article>
 
-    </div>
-    
-    
+    <article class="project" id="periodic-table">
+      <h3>Interactive Periodic Table Database</h3>
+      <p>
+        I built a Python and SQL web interface for exploring data about
+        the 118 chemical elements. The project connects a relational
+        database with an interface for querying and displaying element
+        properties and their relationships.
+      </p>
+      <p class="project-meta">Python &middot; SQL &middot; Web development</p>
+    </article>
 
+    <article class="project" id="tree-structures">
+      <h3>Binary Search Trees and Red-Black Trees</h3>
+      <p>
+        I implemented binary search trees and red-black trees in C++,
+        studying how tree balancing supports efficient search and updates.
+      </p>
+      <p class="project-meta">C++ &middot; Data structures &middot; Algorithms</p>
+    </article>
+  </section>
 
+  <section class="card skills" aria-labelledby="technical-skills-title">
+    <h2 id="technical-skills-title">Technical Skills</h2>
+    <p>
+      <strong>Programming:</strong>
+      Python, MATLAB, R, SQL, C/C++, Java, JavaScript, and Mathematica.
+    </p>
+    <p>
+      <strong>Data analysis and visualization:</strong>
+      NumPy, pandas, Matplotlib, Tableau, and Excel.
+    </p>
+    <p>
+      <strong>Methods:</strong>
+      Statistical learning, kernel methods, optimization, time-series
+      modeling, and numerical experimentation.
+    </p>
+  </section>
 
+  <section class="card experience" aria-labelledby="research-experience-title">
+    <h2 id="research-experience-title">Research Experience and Mentoring</h2>
+    <p>
+      <strong>Chapman Brain Institute:</strong>
+      Research support involving data collection, cleaning, statistical
+      analysis, and visualization.
+    </p>
+    <p>
+      <strong>DATA@UCI:</strong>
+      Mentored an undergraduate research team in data analysis,
+      dimensionality reduction, research design, and presentation.
+    </p>
+  </section>
 
-    <!-- <div class="card">
-      <h2>Other Projects</h2>
-      <p> In addition to math research I have also looked and worked on projects in different topics</p>
-
-      <ol>
-      <li>   <a href="https://alpaynatanael.github.io/VRLattices/"> Abstract Algebra and Virtual Reality</a> </li>
-      <li>   <a href="./pages/ML.html">Machine Learning</a> </li>
-      </ol>
-    </div> -->
+</div>
 
 
   </div>
-	
+
   <div class="rightcolumn">
     <div class="card">
          <a href="./Me.html"><h2>About Me</h2></a>
 
 		<!-- <a href="./pages/Me.html"><h2>About Me</h2></a> -->
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="./../misc/p7.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
-  <img class="mySlides" src="./../misc/pic11.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
-  <!--<img class="mySlides" src="./misc/p5.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
-  <img class="mySlides" src="./misc/p3.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
-  <img class="mySlides" src="./misc/p4.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">-->
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  <img class="mySlides" src="./../misc/p7.jpg" alt="Natanael Alpay" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
+  <img class="mySlides" src="./../misc/pic11.jpg" alt="Natanael Alpay" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
+  <!--<img class="mySlides" src="./misc/p5.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
+  <img class="mySlides" src="./misc/p4.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">-->
+  <button class="w3-button w3-black w3-display-left" aria-label="Previous photograph" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" aria-label="Next photograph" onclick="plusDivs(1)">&#10095;</button>
 </div>
 
 <p>Graduate Student in Mathematics at the University of California, Irvine.</p>
-      <p>Undergraduate from Chapman University. BS in Mathematics, Phyiscs and Computer Science. BA in French.</p>
+      <p>Undergraduate from Chapman University. BS in Mathematics, Physics and Computer Science. BA in French.</p>
 	<p>Email: nalpay@uci.edu </p>
     </div>
     <div class="topnav">
   <a href="./../pages/Me.html">More about me</a>
-  <a href="  https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
-  <a href="#" style="float:right">Link</a>
+  <a href="https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
+  
 </div>
   </div>
 </div>
 
 <div class="footer">
-  <h1 style="font-size:3vw"><p class="italic" >"Dans l'imagination on peut voir".</p></h1>
+  <p class="italic" style="font-size:1.3em;">"Dans l'imagination on peut voir".</p>
 </div>
 
 

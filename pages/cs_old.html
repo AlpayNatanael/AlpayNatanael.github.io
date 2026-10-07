@@ -1,0 +1,470 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello World HTML</title>
+</head>
+<body>
+<h1>Natanael projects list</h1>
+
+	<nav>
+		<ul>
+			<li><a href="https://AlpayNatanael.github.io/VRLattices/"> VR Objects</a></li>
+			<li><a href="https://AlpayNatanael.github.io/VR-color-objects/"> VR colorful Objects</a></li>
+			<li><a href="#">Links</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  font-style: italic;
+}
+
+
+.mySlides {display:none;}
+
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* Add a nav*/
+.nav {
+  font-size: 30px;
+
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  /* margin-top: 20px; */
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.box {
+  width: 30%;
+  height: 200px;
+  border: 5px dashed #f7a239;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<style>
+            ol li {
+                font-weight:bold;
+            }
+            li > * {
+                font-weight:normal;
+            }
+</style>
+<style>
+  .cs-content {
+    color: #262626;
+  }
+
+  .cs-content h2 {
+    margin: 0 0 0.65em;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .cs-content .intro {
+    margin: 0;
+    max-width: 78ch;
+    line-height: 1.6;
+  }
+
+  .cs-content .project {
+    padding: 1.1em 0;
+    border-bottom: 1px solid #e1e7eb;
+  }
+
+  .cs-content .project:first-of-type {
+    padding-top: 0;
+  }
+
+  .cs-content .project:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .cs-content .project h3 {
+    margin: 0 0 0.3em;
+    color: #174a72;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .cs-content .project p,
+  .cs-content .skills p,
+  .cs-content .experience p {
+    margin: 0.45em 0;
+    line-height: 1.55;
+  }
+
+  .cs-content .project .project-meta {
+    color: #555;
+    font-size: 0.9em;
+  }
+
+  .cs-content .project-status {
+    display: inline-block;
+    margin: 0.1em 0 0.35em;
+    padding: 0.15em 0.55em;
+    border: 1px solid #cedee9;
+    border-radius: 3px;
+    background: #edf4f8;
+    color: #174a72;
+    font-size: 0.85em;
+  }
+
+  .cs-content .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.2em;
+    margin-top: 0.6em;
+  }
+
+  .cs-content a {
+    color: #174a72;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .cs-content a:hover,
+  .cs-content a:focus-visible {
+    color: #a14b00;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  @media screen and (max-width: 600px) {
+    .cs-content .card {
+      padding: 18px;
+    }
+
+    .cs-content h2 {
+      font-size: 1.4rem;
+    }
+
+    .cs-content .project h3 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Natanael S. Alpay </h1>
+  <!-- <h3>Personal Website</h3> -->
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <div class="topnav">
+      <a href="./../pages/Me.html">About Me</a>
+        <a href="https://www.linkedin.com/in/natanael-alpay-99802a19a/">Linkedin</a>
+        <a href="https://github.com/AlpayNatanael">GitHub</a>
+        <a href="	 https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
+	    <a href="https://www.dropbox.com/scl/fi/wfyblbxrjdyydltnlr5xt/NA_CV.pdf?rlkey=p6uf7ukhhgz40z3236slxli53&dl=0"> CV </a>
+            <a href="./teaching.html"> Teaching </a>
+        <a href="#" style="float:right">Link</a>
+      </div>
+
+      
+
+      
+      <div class="nav">
+        <!-- <h2> <b>Research Publications</b></h2> -->
+        <a href="./../index.html"><b>Mathematics</b></a>
+        <a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="./../pages/cs.html"><b>Computer and Data Science</b></a>
+      </div>
+      
+<!-- 
+    
+      <h1 style="text-align:center"><b>Page under development.</b></h1> -->
+
+      <div style="text-align:center">
+        <!-- <h1><b>Page under development.</b></h1> -->
+        <img src="./../misc/building1.png" alt="Under construction" style="max-width:2000px;width:100%;height:auto;">
+      </div>
+
+	
+	  
+      <div class="card">
+  
+        <h2><b> Languages: </b> Python, Java, SQL, R, C++, C#, Java, Java-script, Matlab, Mathmatica .</h2>
+        <!-- <h2> <b>Projects</b></h2>
+        <ol>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>R</li>
+          <li>C++</li>
+          <li>JAVA</li>
+          <li>
+        ....
+          </li>
+        </ol> -->
+  
+      </div>
+
+
+    <div class="card">
+  
+      <h2> <b>Projects</b></h2>
+      <ol>
+        <li>Machine Learning: <b>  Studied the theorey behind implementations of machine learning code and implemented generaliations of SVM and RBF methods.</b> </li>
+        <li> Data Analysis: <b> Forecasting real-world financial data using ARIMA and Holt-Winters models stock prices for the next five years using R. 
+        </li>
+        <li> Data-Base: <b> Web iterface based on pything and SQL to learn and see relation between all 118 elements.</b> </li>
+        <li>  Optimiazation: <b> Red Black tree extention to Binary search tree implementation in C++.</b> </li>
+        <li>VR and web itnerface:<b> web iterface to visualize mathemataics object in VR generated via algorithm in Java script.</b> </li> 
+        <li>
+      ....
+        </li>
+      </ol>
+
+    </div>
+
+    <div class="card">
+  
+
+      <h2> <b>Experience</b></h2>
+      <ol>
+        <li>Research assistemt: Data analysit and data collection internsihip at the Chapman Brain Institute</li>
+        <li>Student research implemenign theoretical machine learning in matlab and python </li>
+
+      ....
+        </li>
+      </ol>
+
+    </div>
+    
+    
+
+
+
+
+    <!-- <div class="card">
+      <h2>Other Projects</h2>
+      <p> In addition to math research I have also looked and worked on projects in different topics</p>
+
+      <ol>
+      <li>   <a href="https://alpaynatanael.github.io/VRLattices/"> Abstract Algebra and Virtual Reality</a> </li>
+      <li>   <a href="./pages/ML.html">Machine Learning</a> </li>
+      </ol>
+    </div> -->
+
+
+  </div>
+	
+  <div class="rightcolumn">
+    <div class="card">
+         <a href="./Me.html"><h2>About Me</h2></a>
+
+		<!-- <a href="./pages/Me.html"><h2>About Me</h2></a> -->
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="./../misc/p7.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
+  <img class="mySlides" src="./../misc/pic11.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
+  <!--<img class="mySlides" src="./misc/p5.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
+  <img class="mySlides" src="./misc/p3.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">
+  <img class="mySlides" src="./misc/p4.jpg" style="width:100%; cursor:pointer;" onclick="plusDivs(1)">-->
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<p>Graduate Student in Mathematics at the University of California, Irvine.</p>
+      <p>Undergraduate from Chapman University. BS in Mathematics, Phyiscs and Computer Science. BA in French.</p>
+	<p>Email: nalpay@uci.edu </p>
+    </div>
+    <div class="topnav">
+  <a href="./../pages/Me.html">More about me</a>
+  <a href="  https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
+  <a href="#" style="float:right">Link</a>
+</div>
+  </div>
+</div>
+
+<div class="footer">
+  <h1 style="font-size:3vw"><p class="italic" >"Dans l'imagination on peut voir".</p></h1>
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 15000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
