@@ -1,163 +1,58 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-.box {
-  width: 30%;
-  height: 200px;
-  border: 5px dashed #f7a239;
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-
-p.normal {
-  font-style: normal;
-}
-
-p.italic {
-  font-style: italic;
-}
-
-p.oblique {
-  font-style: oblique;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Learning: Theory and Implementation | Natanael Alpay</title>
+  <meta name="description" content="Undergraduate machine learning research with Mihaela Vajiac: perceptrons, radial basis functions, support vector machines, and decision boundaries.">
+  <meta name="theme-color" content="#174a72">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Machine Learning: Theory and Implementation | Natanael Alpay">
+  <meta property="og:description" content="Undergraduate machine learning research with Mihaela Vajiac: perceptrons, radial basis functions, support vector machines, and decision boundaries.">
+  <meta property="og:url" content="https://alpaynatanael.github.io/pages/ML.html">
+  <meta property="og:image" content="https://alpaynatanael.github.io/misc/about-main.png">
+  <meta property="og:image:alt" content="Natanael Alpay by the waterfront">
+  <link rel="canonical" href="https://alpaynatanael.github.io/pages/ML.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/navigation.js" defer></script>
+  <script src="../assets/slideshow.js" defer></script>
 </head>
 <body>
-
-
-
-<div class="topnav">
-  <a href="./../index.html">Homepage</a>
-  <a href="#" style="float:right">Link</a>
-</div>
-
-
-
-<div class="card">
-    <h1>Machine Learning: Theory and Implementation</h1>
-    <h3> Authors: Natanael Alpay and Michaela Vajiac</h3>
-    <h3> Abstract</h3>
-    
-    <p> Worked as an undergraduate reasearch assistent in the topic of theoretical mathine learning and its implementation.</p>
-    <img src="./../misc/RBF.jpg" width="75%" height="75%">
-    <p>Above is the implementation of the Radial basis function algorithm for finidng the hyper plane, desicion boundary, n a given data set.</p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="header">
+    <p class="site-title"><a href="../index.html">Natanael S. Alpay</a></p>
+    <p class="site-subtitle">Mathematics · Quantitative Research · Machine Learning</p>
+  </header>
+  <nav id="site-nav" class="topnav" aria-label="Main navigation"><a href="../index.html">Home</a></nav>
+  <nav id="research-nav" class="nav" aria-label="Research areas"><a href="../index.html">Mathematics</a><a href="../pages/cs.html">Computer and Data Science</a></nav>
+  <div class="row">
+    <main class="leftcolumn" id="main-content" tabindex="-1">
+<section class="card"><p class="breadcrumb"><a href="./cs.html#ml-implementation">← Computational projects</a></p><h1>Machine Learning: Theory and Implementation</h1><p class="authors">Natanael Alpay · Undergraduate research with Mihaela Vajiac</p><p>I studied and implemented classification methods including perceptrons, radial basis function networks, and support vector machines using Python and MATLAB. The project connects their mathematical foundations with experiments and visualizations of learned decision boundaries.</p><p class="section-links"><a href="../posters/MNT_Poster_v2.pdf">Research poster (PDF)</a></p></section>
+<section class="card"><h2>Visualizing a Decision Boundary</h2><figure class="project-figure"><img src="../misc/RBF.jpg" alt="A radial basis function classification experiment showing data points and a learned decision boundary" loading="lazy"><figcaption>Decision-boundary visualization from the radial basis function implementation.</figcaption></figure><p>These experiments illustrate how the choice of representation affects classification. A single linear threshold perceptron requires linearly separable data for exact classification; problems such as XOR require a richer representation or model.</p></section>
+    </main>
+    <aside class="rightcolumn" aria-label="About Natanael Alpay">
+  <section class="card profile-card">
+    <h2><a href="../pages/Me.html">About Me</a></h2>
+    <div class="slideshow" data-slideshow role="region" aria-roledescription="carousel" aria-label="Photographs of Natanael Alpay">
+      <div class="photo-frame" id="profile-photos"><img class="slide" fetchpriority="high" src="../misc/pic1.png" alt="Natanael Alpay" width="1254" height="1254" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/Socams2026_NatanaelAlpay.png" alt="Natanael Alpay" width="1448" height="1086" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/pic11.jpg" alt="Natanael Alpay" width="1416" height="1374" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/p9.jpg" alt="Natanael Alpay" width="1600" height="1200" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/p5.jpeg" alt="Natanael Alpay" width="1600" height="1200" decoding="async"></div>
+      <div class="slideshow-controls" hidden>
+        <button type="button" data-previous aria-controls="profile-photos" aria-label="Previous photograph">❮</button>
+        <span class="photo-counter" aria-live="polite" aria-atomic="true">1 / 5</span>
+        <button type="button" data-next aria-controls="profile-photos" aria-label="Next photograph">❯</button>
+        <button type="button" data-toggle aria-controls="profile-photos">Pause slideshow</button>
+      </div>
+    </div>
+    <p>Ph.D. candidate in mathematics at the University of California, Irvine.</p>
+    <p>Chapman University: B.S. degrees in Mathematics, Physics, and Computer Science; B.A. in French.</p>
+    <p><a href="mailto:nalpay@uci.edu">nalpay@uci.edu</a></p>
+    <p><a href="../pages/Me.html">More about me</a></p>
+  </section>
+</aside>
   </div>
-
-
-<div class="card">
-    <h2>Presetned at</h2>
-    <ol>  
-    </ol>
-</div>
-
-
-
+  <footer class="footer">
+    <p class="italic" lang="fr">“Dans l’imagination on peut voir.”</p>
+    <p class="footer-contact"><a href="mailto:nalpay@uci.edu">nalpay@uci.edu</a> · <a href="../misc/resume.pdf">Resume (PDF)</a> · <a href="../misc/cv.pdf">CV (PDF)</a></p>
+  </footer>
 </body>
 </html>

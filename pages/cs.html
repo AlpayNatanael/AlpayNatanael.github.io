@@ -1,316 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Computer and Data Science | Natanael S. Alpay</title>
-<meta name="description" content="Machine learning, pharmacovigilance, deep hedging, scientific computing, and data analysis projects by Natanael S. Alpay.">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-a:link {
-   text-decoration: none;
-}
-
-a:hover {
-  color: orange;
-  font-style: italic;
-}
-
-
-.mySlides {display:none;}
-
-
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-/* Add a nav*/
-.nav {
-  font-size: 30px;
-
-  background-color: white;
-  text-align: center;
-  padding: 10px;
-  /* margin-top: 20px; */
-}
-
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-.box {
-  width: 30%;
-  height: 200px;
-  border: 5px dashed #f7a239;
-}
-img {
-  width: 100%;
-  height: 100%;
-}
-
-p.normal {
-  font-style: normal;
-}
-
-p.italic {
-  font-style: italic;
-}
-
-p.oblique {
-  font-style: oblique;
-}
-
-
-li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-<style>
-            ol li {
-                font-weight:bold;
-            }
-            li > * {
-                font-weight:normal;
-            }
-        </style>
-<style>
-.cs-content {
-  color: #262626;
-}
-
-.cs-content h2 {
-  margin: 0 0 0.65em;
-  font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
-.cs-content .intro {
-  margin: 0;
-  width: 100%;
-  max-width: none;
-  line-height: 1.6;
-}
-
-.cs-content .project {
-  padding: 1.1em 0;
-  border-bottom: 1px solid #e1e7eb;
-}
-
-.cs-content .project:first-of-type {
-  padding-top: 0;
-}
-
-.cs-content .project:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.cs-content .project h3 {
-  margin: 0 0 0.3em;
-  color: #174a72;
-  font-family: inherit;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.35;
-}
-
-.cs-content .project p,
-.cs-content .skills p,
-.cs-content .experience p {
-  margin: 0.45em 0;
-  line-height: 1.55;
-}
-
-.cs-content .project .project-meta {
-  color: #555;
-  font-size: 0.9em;
-}
-
-.cs-content .project-status {
-  display: inline-block;
-  margin: 0.1em 0 0.35em;
-  padding: 0.15em 0.55em;
-  border: 1px solid #cedee9;
-  border-radius: 3px;
-  background: #edf4f8;
-  color: #174a72;
-  font-size: 0.85em;
-}
-
-.cs-content .project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em 1.2em;
-  margin-top: 0.6em;
-}
-
-.cs-content a {
-  color: #174a72;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.cs-content a:hover,
-.cs-content a:focus-visible {
-  color: #a14b00;
-  font-style: normal;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-@media screen and (max-width: 600px) {
-  .cs-content .card {
-    padding: 18px;
-  }
-
-  .cs-content h2 {
-    font-size: 1.4rem;
-  }
-
-  .cs-content .project h3 {
-    font-size: 1.1rem;
-  }
-}
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Learning and Scientific Computing | Natanael Alpay</title>
+  <meta name="description" content="Projects in machine learning, pharmacovigilance, complex-valued optimization, financial risk, and mathematical visualization.">
+  <meta name="theme-color" content="#174a72">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Machine Learning and Scientific Computing | Natanael Alpay">
+  <meta property="og:description" content="Projects in machine learning, pharmacovigilance, complex-valued optimization, financial risk, and mathematical visualization.">
+  <meta property="og:url" content="https://alpaynatanael.github.io/pages/cs.html">
+  <meta property="og:image" content="https://alpaynatanael.github.io/misc/about-main.png">
+  <meta property="og:image:alt" content="Natanael Alpay by the waterfront">
+  <link rel="canonical" href="https://alpaynatanael.github.io/pages/cs.html">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/navigation.js" defer></script>
+  <script src="../assets/slideshow.js" defer></script>
 </head>
 <body>
-
-<div class="header">
-  <h1>Natanael S. Alpay </h1>
-  <!-- <h3>Personal Website</h3> -->
-</div>
-
-
-<div class="row">
-  <div class="leftcolumn">
-
-    <div class="topnav">
-      <a href="./../pages/Me.html">About Me</a>
-        <a href="https://www.linkedin.com/in/natanael-alpay-99802a19a/">LinkedIn</a>
-        <a href="https://github.com/AlpayNatanael">GitHub</a>
-        <a href="https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
-	    <a href="https://www.dropbox.com/scl/fi/wfyblbxrjdyydltnlr5xt/NA_CV.pdf?rlkey=p6uf7ukhhgz40z3236slxli53&dl=0"> CV </a>
-            <a href="./teaching.html"> Teaching </a>
-        
-      </div>
-
-      
-
-      
-      <nav class="nav" aria-label="Research areas" style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.6em 1.5em;font-size:24px;">
-        <a href="../index.html"><b>Mathematics</b></a>
-        <a href="./cs.html" aria-current="page"><b>Computer and Data Science</b></a>
-      </nav>
-      
-
-
-<div class="cs-content">
-
-  <section class="card" aria-labelledby="computing-title">
-    <h2 id="computing-title">Focuses and Dedicated Interests</h2>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="header">
+    <p class="site-title"><a href="../index.html">Natanael S. Alpay</a></p>
+    <p class="site-subtitle">Mathematics · Quantitative Research · Machine Learning</p>
+  </header>
+  <nav id="site-nav" class="topnav" aria-label="Main navigation"><a href="../index.html">Home</a></nav>
+  <nav id="research-nav" class="nav" aria-label="Research areas"><a href="../index.html">Mathematics</a><a href="../pages/cs.html">Computer and Data Science</a></nav>
+  <div class="row">
+    <main class="leftcolumn cs-content" id="main-content" tabindex="-1">
+<section class="card" aria-labelledby="computing-title">
+    <h1 id="computing-title">Machine Learning and Scientific Computing</h1>
 <p class="intro">
   I combine mathematical research with programming and computational
   experimentation to develop and evaluate methods in machine learning,
@@ -320,7 +39,7 @@ li:not(:last-child) {
   portfolio compression and deep hedging.
 </p>
 
-<p class="intro" style="margin-top: 0.8em;">
+<p class="intro">
   I use AI and large language models as conjecture engines to generate
   candidate formulas, explore algorithms, and develop possible proof
   strategies. I critically evaluate these ideas through counterexample
@@ -347,8 +66,8 @@ li:not(:last-child) {
         constraints.
       </p>
       <p class="project-meta">
-        Portfolio compression &middot; Risk-sensitive optimization
-        &middot; Dynamic programming
+        Portfolio compression · Risk-sensitive optimization
+        · Dynamic programming
       </p>
     </article>
 
@@ -356,15 +75,14 @@ li:not(:last-child) {
       <h3>FAERS: Machine Learning for Drug Safety Signal Prioritization</h3>
       <p>
         I developed and evaluated gradient-boosted models to prioritize
-        drug&ndash;adverse-event reporting signals in the FDA Adverse Event
+        drug–adverse-event reporting signals in the FDA Adverse Event
         Reporting System (FAERS). The study combines classical
         disproportionality measures with report-quality information and
         examines performance on future quarters, calibration, and the
         contribution of different feature groups.
       </p>
-      <p class="project-meta">
-        Gradient boosting &middot; Temporal validation
-        &middot; Calibration
+      <p class="project-meta">2026 · Gradient boosting · Temporal validation
+        · Calibration
       </p>
       <div class="project-links">
         <a href="../posters/BSSC_Poster_Natanael_alpay.pdf">Poster (PDF)</a>
@@ -372,26 +90,23 @@ li:not(:last-child) {
     </article>
 
     <article class="project" id="vaers">
-      <h3>VAERS: Early Prioritization of Vaccine&ndash;Symptom Signals</h3>
+      <h3>VAERS: Early Prioritization of Vaccine–Symptom Signals</h3>
       <p>
         Using the Vaccine Adverse Event Reporting System (VAERS), I built
-        a workflow that ranks vaccine&ndash;symptom pairs by their
+        a workflow that ranks vaccine–symptom pairs by their
         likelihood of meeting a reporting-signal criterion in the following
         quarter. The project compares logistic regression and calibrated
         gradient boosting with classical statistical scores to prioritize
         pairs for expert review.
       </p>
-      <p class="project-meta">
-        Logistic regression &middot; Gradient boosting
-        &middot; Forecasting
+      <p>The target is a future statistical reporting signal used for triage, rather than a causal estimate of vaccine risk.</p><p class="project-meta">2025–2026 · Logistic regression · Gradient boosting
+        · Forecasting
       </p>
       <div class="project-links">
         <a href="https://ww2.amstat.org/meetings/aipm/2026/posterpresentations.cfm">Poster abstract</a>
-        <a href="https://care.choc.org/2026-pediatric-and-lifespan-data-science-conference-from-insight-to-real-world-impact/">CHOC conference presentation</a>
+        <a href="https://care.choc.org/2026-pediatric-and-lifespan-data-science-conference-from-insight-to-real-world-impact/">Conference coverage</a>
       </div>
-      <!-- The full VAERS poster PDF was not included in the website ZIP.
-           Replace the poster-abstract link with its PDF path after upload. -->
-    </article>
+      </article>
 
     <article class="project" id="complex-sgd">
       <h3>Complex Stochastic Gradient Descent and Kernel Regression</h3>
@@ -402,9 +117,8 @@ li:not(:last-child) {
         in complex reproducing kernel Hilbert spaces, including the recovery
         of superoscillatory functions and Blaschke products.
       </p>
-      <p class="project-meta">
-        Stochastic optimization &middot; Kernel methods
-        &middot; Numerical analysis
+      <p class="project-meta">2026 · Stochastic optimization · Kernel methods
+        · Numerical analysis
       </p>
       <div class="project-links">
         <a href="https://arxiv.org/abs/2604.23017">Preprint on arXiv</a>
@@ -421,9 +135,8 @@ li:not(:last-child) {
         mathematical foundations of these methods with numerical experiments
         and visualizations of decision boundaries.
       </p>
-      <p class="project-meta">
-        Python &middot; MATLAB &middot; Classification
-        &middot; Kernel methods
+      <p class="project-meta">2021–2022 · Python · MATLAB · Classification
+        · Kernel methods
       </p>
       <div class="project-links">
         <a href="../posters/MNT_Poster_v2.pdf">Poster (PDF)</a>
@@ -443,11 +156,10 @@ li:not(:last-child) {
         structures as interactive 3D objects that can be explored in a web
         browser or with a virtual reality headset.
       </p>
-      <p class="project-meta">
-        JavaScript &middot; Babylon.js &middot; Mathematical visualization
+      <p class="project-meta">2020–2022 · JavaScript · Babylon.js · Mathematical visualization
       </p>
       <div class="project-links">
-        <a href="https://alpaynatanael.github.io/VRLattices/">Interactive demo</a>
+        <a href="https://alpaynatanael.github.io/VRLattices/src/cube.html">3D cube demo</a>
         <a href="../posters/VR_Lattices_2021.pdf">Poster (PDF)</a>
         <a href="./VR.html">Project page</a>
       </div>
@@ -463,21 +175,23 @@ li:not(:last-child) {
         reported data.
       </p>
       <p class="project-meta">
-        Data cleaning &middot; Exploratory analysis &middot; Visualization
+        Data cleaning · Exploratory analysis · Visualization
       </p>
       <div class="project-links">
         <a href="../posters/NY_transport.pdf">Poster (PDF)</a>
       </div>
     </article>
 
-    <article class="project" id="time-series">
+    </section>
+
+  <section class="card" aria-labelledby="additional-projects-title"><h2 id="additional-projects-title">Additional Programming Projects</h2><article class="project" id="time-series">
       <h3>Financial Time-Series Modeling</h3>
       <p>
-        I applied ARIMA and Holt&ndash;Winters models in R to financial
+        I applied ARIMA and Holt–Winters models in R to financial
         time series. The project focused on fitting statistical models,
         examining trends, and producing and visualizing forecasts.
       </p>
-      <p class="project-meta">R &middot; ARIMA &middot; Holt&ndash;Winters</p>
+      <p class="project-meta">R · ARIMA · Holt–Winters</p>
     </article>
 
     <article class="project" id="periodic-table">
@@ -488,7 +202,7 @@ li:not(:last-child) {
         database with an interface for querying and displaying element
         properties and their relationships.
       </p>
-      <p class="project-meta">Python &middot; SQL &middot; Web development</p>
+      <p class="project-meta">Python · SQL · Web development</p>
     </article>
 
     <article class="project" id="tree-structures">
@@ -497,11 +211,9 @@ li:not(:last-child) {
         I implemented binary search trees and red-black trees in C++,
         studying how tree balancing supports efficient search and updates.
       </p>
-      <p class="project-meta">C++ &middot; Data structures &middot; Algorithms</p>
+      <p class="project-meta">C++ · Data structures · Algorithms</p>
     </article>
-  </section>
-
-  <section class="card skills" aria-labelledby="technical-skills-title">
+  </section><section class="card skills" aria-labelledby="technical-skills-title">
     <h2 id="technical-skills-title">Technical Skills</h2>
     <p>
       <strong>Programming:</strong>
@@ -532,79 +244,30 @@ li:not(:last-child) {
     </p>
   </section>
 
-</div>
 
-
-  </div>
-
-  <div class="rightcolumn">
-    <div class="card">
-         <a href="./Me.html"><h2>About Me</h2></a>
-
-		<!-- <a href="./pages/Me.html"><h2>About Me</h2></a> -->
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="./../misc/pic1.png" alt="Natanael Alpay" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
-  <img class="mySlides" src="./../misc/Socams2026_NatanaelAlpay.png" alt="Natanael Alpay" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
-  <!--<img class="mySlides" src="./misc/p5.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
-  <img class="mySlides" src="./misc/p3.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">
-  <img class="mySlides" src="./misc/p4.jpg" style="width:100%; cursor:pointer;" aria-label="Next photograph" onclick="plusDivs(1)">-->
-  <button class="w3-button w3-black w3-display-left" aria-label="Previous photograph" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" aria-label="Next photograph" onclick="plusDivs(1)">&#10095;</button>
-</div>
-
-<p>Graduate Student in Mathematics at the University of California, Irvine.</p>
-      <p>Undergraduate from Chapman University. BS in Mathematics, Physics and Computer Science. BA in French.</p>
-	<p>Email: nalpay@uci.edu </p>
+    </main>
+    <aside class="rightcolumn" aria-label="About Natanael Alpay">
+  <section class="card profile-card">
+    <h2><a href="../pages/Me.html">About Me</a></h2>
+    <div class="slideshow" data-slideshow role="region" aria-roledescription="carousel" aria-label="Photographs of Natanael Alpay">
+      <div class="photo-frame" id="profile-photos"><img class="slide" fetchpriority="high" src="../misc/pic1.png" alt="Natanael Alpay" width="1254" height="1254" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/Socams2026_NatanaelAlpay.png" alt="Natanael Alpay" width="1448" height="1086" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/pic11.jpg" alt="Natanael Alpay" width="1416" height="1374" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/p9.jpg" alt="Natanael Alpay" width="1600" height="1200" decoding="async"><img class="slide" hidden loading="lazy" src="../misc/p5.jpeg" alt="Natanael Alpay" width="1600" height="1200" decoding="async"></div>
+      <div class="slideshow-controls" hidden>
+        <button type="button" data-previous aria-controls="profile-photos" aria-label="Previous photograph">❮</button>
+        <span class="photo-counter" aria-live="polite" aria-atomic="true">1 / 5</span>
+        <button type="button" data-next aria-controls="profile-photos" aria-label="Next photograph">❯</button>
+        <button type="button" data-toggle aria-controls="profile-photos">Pause slideshow</button>
+      </div>
     </div>
-    <div class="topnav">
-  <a href="./../pages/Me.html">More about me</a>
-  <a href="https://1drv.ms/w/c/b1bc319927da449b/EZtE2ieZMbwggLFXIAAAAAABqXPzVkmoEixZZQ_JgoFZ8A?e=6Rf30x"> Resume </a>
-  
-</div>
+    <p>Ph.D. candidate in mathematics at the University of California, Irvine.</p>
+    <p>Chapman University: B.S. degrees in Mathematics, Physics, and Computer Science; B.A. in French.</p>
+    <p><a href="mailto:nalpay@uci.edu">nalpay@uci.edu</a></p>
+    <p><a href="../pages/Me.html">More about me</a></p>
+  </section>
+</aside>
   </div>
-</div>
-
-<div class="footer">
-  <p class="italic" style="font-size:1.3em;">"Dans l'imagination on peut voir".</p>
-</div>
-
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 15000); // Change image every 2 seconds
-}
-</script>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
+  <footer class="footer">
+    <p class="italic" lang="fr">“Dans l’imagination on peut voir.”</p>
+    <p class="footer-contact"><a href="mailto:nalpay@uci.edu">nalpay@uci.edu</a> · <a href="../misc/resume.pdf">Resume (PDF)</a> · <a href="../misc/cv.pdf">CV (PDF)</a></p>
+  </footer>
 </body>
 </html>
