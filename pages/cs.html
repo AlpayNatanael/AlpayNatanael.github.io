@@ -31,12 +31,11 @@
 <section class="card" aria-labelledby="computing-title">
     <h1 id="computing-title">Machine Learning and Scientific Computing</h1>
 <p class="intro">
-  I combine mathematical research with programming and computational
-  experimentation to develop and evaluate methods in machine learning,
-  statistical modeling, and scientific computing. My projects include
-  drug and vaccine safety signal prioritization, kernel methods,
-  and mathematical visualization, alongside ongoing research on
-  portfolio compression and deep hedging.
+  I combine mathematical analysis with computational experimentation
+  to develop and evaluate methods in machine learning, statistical
+  modeling, and scientific computing. My projects include drug and
+  vaccine safety signal prioritization, kernel methods, mathematical
+  visualization, and neural hedging with efficient simulation.
 </p>
 
 <p class="intro">
@@ -55,19 +54,35 @@
     <h2 id="ml-projects-title">Research and Machine Learning</h2>
 
     <article class="project" id="bellman-hedging">
-      <h3>Bellman Deep Hedging and Portfolio Compression</h3>
-      <span class="project-status">Work in progress</span>
+      <h3>Memory-Efficient Deep Hedging</h3>
+      <span class="project-status">Work in progress · Joint work with Emeric Battaglia</span>
       <p>
-        I am studying how low-dimensional representations of financial
-        portfolios affect hedging decisions. The project connects
-        mathematical bounds on representation and learning errors with
-        Bellman-based benchmarks and the development of neural-network
-        trading strategies, accounting for transaction costs and trading
-        constraints.
+        We implement neural hedging strategies in Python and PyTorch
+        using Heston market simulations, transaction costs, and CVaR
+        and entropic risk objectives. We study how training data can
+        be generated and used more efficiently while preserving
+        hedging performance.
+      </p>
+      <p>
+        Our matched three-stock experiment reduced peak training RAM
+        by <strong>63.8%</strong>, with closely comparable observed
+        test CVaR. In a separate short benchmark, parallel generation
+        reduced dynamic preparation, training and testing time by a
+        factor of <strong>2.47</strong>. These preliminary results
+        motivate further experiments with larger portfolios and
+        longer trading horizons.
+      </p>
+      <p>
+        A longer-term direction is to study simpler portfolio
+        representations that preserve hedging quality.
       </p>
       <p class="project-meta">
-        Portfolio compression · Risk-sensitive optimization
-        · Dynamic programming
+        Python · PyTorch · Monte Carlo simulation · Risk optimization
+      </p>
+      <p>
+        <strong>References:</strong>
+        <a href="https://github.com/AlpayNatanael/Deep-Hedging-Implementation">GitHub repository and notebooks</a>
+        · <a href="https://github.com/AlpayNatanael/Deep-Hedging-Implementation/blob/main/Writeup.pdf">Project write-up</a>
       </p>
     </article>
 
